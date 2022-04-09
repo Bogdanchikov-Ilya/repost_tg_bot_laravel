@@ -32,6 +32,15 @@ class Handler extends ExceptionHandler
      *
      * @return void
      */
+    public function report (Throwable $e)
+    {
+//        $message = $e->getMessage();
+//        \Illuminate\Support\Facades\Http::post('https://api.tlgr.org/bot5045491073:AAGn4ZZuWH9XYxKNf6lj8s-aqnY441KfoDU/sendMessage', [
+//            'chat_id' => 761657672,
+//            'text' => '<b>sdfsdfds</b>',
+//            'parse_mode' => 'html',
+//        ]);
+    }
     public function register()
     {
         $this->reportable(function (Throwable $e) {

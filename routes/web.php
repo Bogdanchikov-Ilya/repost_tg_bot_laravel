@@ -1,5 +1,6 @@
 <?php
 
+use App\Helpers\Telegram;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    \Illuminate\Support\Facades\Http::post('https://api.tlgr.org/bot5045491073:AAGn4ZZuWH9XYxKNf6lj8s-aqnY441KfoDU/sendMessage', [
-        'chat_id' => 761657672,
-        'text' => 'dsfdsfsd'
-    ]);
+//    $telegram = new Telegram();
+//    $telegram->sendMessage(761657672, '<b>sdfsdfds</b>');
 });
